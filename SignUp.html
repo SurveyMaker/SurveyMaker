@@ -1,0 +1,291 @@
+<html>
+<head>
+    <title>SurveyMaker-Sign Up</title>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign Up TODAY for free">
+  <noscript>
+	Sorry Javascript is off turn it back on.
+	</noscript>
+	<script>
+	function SignupGoogle()
+	{
+	var S = confirm("Sign in with Google+ account");
+	
+	if(S == true){
+	window.open("mailto://surveymaker.com@gmail.com");
+	window.open("Confirm.html","_blank")
+	alert("Thanks for signing in!");
+	}
+	else{
+	window.open("SignUp.html","_self");
+	}
+	}
+	function check()
+{
+var psw1 = document.getElementById("Password").value;
+var psw2 = document.getElementById("Confirm_Password").value;
+if(psw1.length < 8 || psw1.length > 20){
+alert("Invalid Password length")
+return false;
+}
+if(psw1!=psw2){
+alert("Password does not match")
+return false;
+}
+else{
+return true;
+}
+}   
+function offline(){
+window.open("Oflline.html","_self");
+
+}
+
+function done(){
+window.open("Confirm.html","_self");
+window.open("mailto://surveymaker.com@gmail?subject= New User&body = The users signup sheet(Give confirm sheet.)","_blank");
+}
+</script> 
+<script src="https://kit.fontawesome.com/46bb4793e2.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$.getJSON("http://api.ipify.org/?format=json", function(e) {
+    document.getElementById("IPAD").value = e.ip;
+});
+</script> 
+<script>
+function HideIPAD(){
+var x = document.getElementById("IPAD");
+
+if(x.type == "text"){
+x.type = "password";
+}
+else if(x.type == "url"){
+x.type = "password";
+}
+else if(x.type == "tel"){
+x.type = "password";
+}
+else if(x.type == "email"){
+x.type = "password";
+}
+else if(x.type == "number"){
+x.type = "password";
+}
+
+
+setTimeout(HideIPAD, 0);
+}
+setTimeout(HideIPAD, 0);
+</script>                                                    					
+	<head>
+	<meta charset="UTF-8">
+  <meta name="description" content="Sign Up for Survey Maker today">
+  <meta name="keywords" content="SurveyMaker, SurveyMaker-Sign_Up">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="SignUp.css">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="shortcut icon" href="favicon.ico"/>
+	  
+		<style>
+		#IconEye{
+		position:absolute;
+		top:95%;
+		left:93%;
+		font-size:35px;
+		color:black;
+		}
+		</style>
+	 </head>
+  
+  
+  
+  
+<body onoffline="offline()" ononline="" oncontextmenu="return false">
+    <center>
+        <div class="Sign-Up">
+<h1>Sign Up</h1>
+<p>The format for each one is in there placeholder.</p>
+          <!--<a href="Login.html"><button class="SingedUp" id="SignedUp">Already signed up</button></a>-->
+            <br>
+            <br>
+    <body  style="background-color: blue">
+	
+
+<form name="myform" onsubmit="return check()" onundo="confirm('Are your sure you want to leave?')" id="getSaved" method="post" oninvalid = "return false" action="mailto://surveymaker.com@gmail.com?subject= New User The users signup sheet(Give confirm sheet)." enctype="text/plain">
+<br>
+<br>
+<script>
+function leave(e){
+window.onbeforeunload = "Are your sure you want to leave?";
+}
+</script>
+<br>
+<br>
+
+<br>
+<br>
+<div id="saver">
+    <table>
+    <tr class="row">
+    <i id="required">*</i><label for="Name">Name:</label>
+        <input type="text" id="PlayerName" name="MyName" placeholder="FirstName_LastName" pattern="^[a-zA-Z0-9_]{3,}$"  title="Your name" autocomplete="off" spellcheck="false" required> <br> <br>
+        </tr>
+    
+     <tr class="row">
+    <i id="required">*</i><label for="Email">Email:</label>
+        <input type="email" spellcheck="false" id="UserEmail" name="UserEmail" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Email address" autocomplete="off" spellcheck="false" placeholder="example@example.example" required/> <br> <br>
+        </tr>
+     
+<tr class="row">
+   <i id="required">*</i><label for="Username">Username:</label>
+        <input type="text" maxlength="20" min="8" contenteditable="true" autocomplete="off" spellcheck="false" id="Username" name="UserName" title="It has to be at 8-20 characters" placeholder="MyUsername" required> <br> <br>
+        
+		</tr>
+          <tr class="row">
+   <i id="required">*</i><label for="Password">Password:</label>
+        <input type="password" name="UserPass" id="Password" placeholder="YourPasscode" autocomplete="off"  title="8 or more characters" spellcheck="false" required>	<br><i class="fas fa-eye-slash" id="IconEye" onclick="revel()"></i>	<br> <br>
+		</tr>
+		<script>
+		function revel(){
+		var x = document.getElementById("Password");
+		if(x.type == "password"){
+		x.type = "text";
+		document.getElementById("IconEye").className = "fas fa-eye";
+		document.getElementById("IconEye").style.position = "absolute";
+		document.getElementById("IconEye").style.top = "95%";
+		document.getElementById("IconEye").style.left = "93%";
+		
+		
+		}else{
+		x.type = "password";
+		document.getElementById("IconEye").className = "fas fa-eye-slash";
+			document.getElementById("IconEye").style.position = "absolute";
+		document.getElementById("IconEye").style.top = "95%";
+		document.getElementById("IconEye").style.left = "93%";
+		}
+		}
+		</script>
+         <br>
+		 <br>
+		 <tr class="row">
+   <i id="required">*</i><label for="Confirm_Password">Confirm_Password:</label>
+        <input type="password" id="Confirm_Password" name="UserCpass" placeholder="Confirm_Passcode" autocomplete="off"  title="8 or more characters" spellcheck="false" required>		<br> <br>
+		<span id="display"></span>
+		</tr>
+		 <br>
+		 <br>
+         <tr>                     
+       <i id="required">*</i><label for="Bmonth" id="UserBmonth">Birth Month:</label>
+            <select title="Select Month" name="Birth Month" required>
+           <option value="">--Select--</option> 
+            <option value="January">January</option> 
+            <option value="Febuary">Febuary</option> 
+            <option value="March">March</option> 
+                <option value="April">April</option> 
+                <option value="May">May</option> 
+                <option value="June">June</option> 
+                <option value="July">July</option> 
+                <option value="Augest">Augest</option> 
+                <option value="September">September</option> 
+                <option value="October">October</option> 
+                <option value="November">November</option> 
+                <option value="December">December</option> 
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        </tr>&nbsp;&nbsp;&nbsp;&nbsp;
+        <tr class="row">
+        
+      <i id="required">*</i><label for="Bday" id="UserBday">Birthday:</label>
+            <select title="Select Day" name="Birth day" required>
+           <option value="">--Select--</option> 
+            <option value="1">1</option> 
+            <option value="2">2</option> 
+            <option value="3">3</option> 
+                <option value="4">4</option> 
+                <option value="5">5</option> 
+                <option value="6">6</option> 
+                <option value="7">7</option> 
+                <option value="8">8</option> 
+                <option value="9">9</option> 
+                <option value="10">10</option> 
+                <option value="11">11</option> 
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              
+            
+            </select>
+        </tr><br>
+  
+          
+        <tr class="row">
+       <i id="required">*</i><label for="Year" id="Byear">Birth year:</label>
+       <input type="text" name="birthyear" pattern="[0-9]{4}" title="Birthyear" placeholder="YYYY" autocomplete="off" spellcheck="false" required>
+        </tr>
+
+        <br><br>
+        <tr class="row">
+		 <label for="IPA" id="IPA">IPA:</label>
+		<input type="password" name="API" onload="getIP(json)" id="IPAD"  placeholder="IP" readonly="true"/>
+	  </tr>
+		</div>
+		<br>
+		<br>
+      <i id="required">*</i><input type="checkbox" name="Agreed" id="Checked" class="checkbox" required>
+        <label>I Agree to the Terms and Conditions of use</label> <br> <br>
+       <br><br>
+	   <label for="yes">
+<input type="checkbox" name="" onclick="checkclick()" id="Yes" class="checkbox">
+        Yes. I would like to occesial updates</label>
+
+       <br><br>
+	   <script>
+	   function checkclick(){
+	   var o = document.getElementById("Yes");
+	
+	if(o.checked==true){
+	o.name = "Yes"
+	}
+	if(o.checked==false){
+	o.name = ""
+	}  
+	   
+	   
+	
+}
+	   </script>
+        
+        <input type="submit" value="Sign Up for free!">
+	<br>
+<a href="Waiting.html" target="_self"><input type="button" id="wait" value="When finished sending info click here"></a>
+	
+    </table>
+    
+
+   
+	</form>
+<a href="SurveyMaker.com.html">Back</a>
+        </center>
+            </body>
+            </div>
+    </center>
+</html>

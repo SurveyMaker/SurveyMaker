@@ -1,0 +1,118 @@
+<html>
+<head>
+<link rel="shortcut icon" href="favicon.ico"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<noscript>
+	Sorry your device is not working for this site please try again or contact <a href="mailto://newbyga6@gmail.com">Owner</a> for any questions.
+	</noscript>
+<style>
+    H1
+        {
+            font-size: 100px;
+            color: aqua;
+        }
+        input[type=password]
+        {
+            font-size: 50px;
+            background-color: aquamarine;
+            color: antiquewhite;
+			width: 30%;
+			height: 40px;
+        }
+		p{
+		 font-size: 20px;
+            color: yellow;
+		}
+		#ChPass {
+		color:green;
+		background-color:skyblue;
+		font-size:15px;
+		}
+		#ChPass:hover
+		{
+		color:red;
+		background-color:orange;
+		font-size:25px;
+		}
+		label{
+		font-size:25px;
+		color:red;
+		}
+		#Back {
+		color:green;
+		background-color:skyblue;
+		font-size:15px;
+		}
+		#Back:hover
+		{
+		color:red;
+		background-color:orange;
+		font-size:25px;
+		}
+		#Submit {
+		color:green;
+		background-color:skyblue;
+		font-size:15px;
+		}
+		#Submit:hover
+		{
+		color:red;
+		background-color:orange;
+		font-size:25px;
+		}
+    </style>
+<script>
+function check()
+{
+var psw1 = document.getElementById("password").value;
+var psw2 = document.getElementById("confirm_password").value;
+if(psw1.length < 8 || psw1.length > 20){
+alert("Password is to short or too big(Must be 8-20 characters long.)");
+return false;
+}
+if(psw1!=psw2){
+alert("Password does not match");
+return false;
+}
+else{
+alert("correct Password");;
+window.open("Login.html", "_self");
+
+return true;
+}
+}
+function offline(){
+window.open("Oflline.html","_self")
+}
+</script>
+	<title>SurveyMaker-NewPassword</title>
+    </head>  
+    <body style="background-color: blue" onoffline="offline()" ononline="">
+   <center>
+   <h1>Get a NEW password</h1>
+   <p>Here is the format: Subject type "Change Password", Body type "Password:[New Password]"</p>
+	  <br>
+	  <br>
+	  <form onsubmit="return check()" enctype="text/plain" action="mailto://newbyga6@gmail.com?subject=New%20password" method="post">
+	  <label>
+	 password:
+  <input name="password" id="password" type="password" required/>
+  </label>
+<br>
+<label>
+confirm password:
+  <input type="password" name="confirm_password" id="confirm_password" required/> 
+</label>
+<br>
+<br>
+  <input type="submit" id="Submit" value="Submit">
+  <br>
+  <br>
+         
+    </form>
+	   <a href="Login.html"><button id="Back">Back</button></a>
+    </center>
+    </body>
+     
+</html>

@@ -1,0 +1,151 @@
+<!Doctype html>
+<html>
+<link rel="shortcut icon" href="favicon.ico"/>
+<head><title>FQA</title>
+<style>
+h4{
+font-size:45px;
+color:green;
+font-weight:bolder;
+font-family:cursive;
+}
+#text1, #text2, #text3, #text4, #text5, #text6, #text7, #text8, #text9, #text10{
+font-size:15px;
+color:yellowgreen;
+font-weight:normal;
+font-family:Arial;
+}
+a{
+font-size:15px;
+color:yellowgreen;
+font-weight:normal;
+font-family:Arial;
+}
+button{
+cursor:pointer;
+}
+</style>
+<script>
+function offline(){
+window.open("Oflline.html","_self")
+}
+function show2(){
+
+document.getElementById("text2").innerHTML = "Yes. The pricings are just there for decorations"
+}
+function hide2(){
+document.getElementById("text2").innerHTML = ""
+}
+function show3(){
+
+document.getElementById("text3").innerHTML = "This website help save you TONS of surveys,Test, and/or quizzez. We build it. Unlike some webisites you only have a limited of space. Were Unlimited."
+}
+function hide3(){
+document.getElementById("text3").innerHTML = ""
+}
+function show4(){
+
+document.getElementById("text4").innerHTML = "Yes. Just simply request what surveys, quizzes or tests you want us to make for you. But we will ask some questions for you."
+}
+function hide4(){
+document.getElementById("text4").innerHTML = ""
+}
+function show5(){
+
+document.getElementById("text5").innerHTML = "Yes and No. Yes you can share your surveys. 1. your survey MUST be a Privite survey,quiz,test(For certain, Public is everyone automatically.) 2.You Must have a permision code(Which found in the main manu a share icon). No you CANNOT share this site. Yes you need permission to share to public(If self build)."
+}
+function hide5(){
+document.getElementById("text5").innerHTML = ""
+}
+function show6(){
+
+document.getElementById("text6").innerHTML = "Yes you can build your own survey by just downloading the builder pack and sending to me. Yes. you can build it through a different site, But it isn't going to exact. We build it."
+}
+function hide6(){
+document.getElementById("text6").innerHTML = ""
+}
+function show7(){
+
+document.getElementById("text7").innerHTML = "No. We also make quizzes and tests as well"
+}
+function hide7(){
+document.getElementById("text7").innerHTML = ""
+}
+function show8(){
+var x = "Sign up"
+var r = x.link("SignUp.html")
+document.getElementById("text8").innerHTML = "Yes we do, but you must " + r
+}
+function hide8(){
+document.getElementById("text8").innerHTML = ""
+}
+</script>
+</head>
+
+<body bgcolor="gray" onoffline="offline()" ononline="">
+<center>
+
+<h4>Is this free?</h4>
+<div id="text2"></div>
+<button onclick="show2()">Show</button> <button onclick="hide2()">Hide</button>
+<br>
+<br>
+<br>
+<h4>What is this about?</h4>
+<div id="text3"></div>
+<button onclick="show3()">Show</button> <button onclick="hide3()">Hide</button>
+<br>
+<br>
+<br>
+<h4>Can I create my own surveys,tests, or quizzes?</h4>
+<div id="text4"></div>
+<button onclick="show4()">Show</button> <button onclick="hide4()">Hide</button>
+<br>
+<br>
+<br>
+<h4>Can I Share with other's both site and surveys, quizzes, or test?</h4>
+<div id="text5"></div>
+<button onclick="show5()">Show</button> <button onclick="hide5()">Hide</button>
+<br>
+<br>
+<br>
+<h4>How can I build my own survey,quiz,or test? or can I build from a different site.</h4>
+<div id="text6"></div>
+<button onclick="show6()">Show</button> <button onclick="hide6()">Hide</button>
+<br>
+<br>
+<br>
+<h4>Do you just make surveys only?</h4>
+<div id="text7"></div>
+<button onclick="show7()">Show</button> <button onclick="hide7()">Hide</button>
+<br>
+<br>
+<br>
+<h4>Can we add links instend of requesting or coding it</h4>
+<div id="text8"></div>
+<button onclick="show8()">Show</button> <button onclick="hide8()">Hide</button>
+<br>
+<br>
+<br>
+ <style type="text/css">
+ .spoilerbutton {display:block;padding: 0px 0px; margin:10px 0px; font-size:15px; font-weight: normal; color:#000000; background-color:white; outline:0; 
+ }
+ .spoiler {overflow:hidden;}
+ .spoiler > div {-webkit-transition: all 0s ease;-moz-transition: margin 0s ease;-o-transition: all 0s ease;transition: margin 0s ease;}
+ .spoilerbutton[value="Show Contact"] + .spoiler > div {margin-top:-250%;}
+ .spoilerbutton[value="Hide Contact"] + .spoiler {padding:5px;} 
+ </style> 
+<div id="text9">More questions contact:</div>
+ <input class="spoilerbutton" type="button" value="Show Contact" onclick="this.value=this.value=='Show Contact'?'Hide Contact':'Show Contact';">
+ <div class="spoiler"><div>
+<p>  </p><p>  </p><a href="mailto://surveymaker.com@gmail.com">surveymaker.com@gmail.com</a></div></div>
+<br>
+<br>
+<br>
+<a href="SignUp.html">Back to sign up</a>
+<br>
+<a href="SurveyMaker.com.html">Back to main Manu</a>
+
+</center>
+</body>
+</html>

@@ -1,0 +1,178 @@
+a{
+  color: lightcyan;  
+    font-size: 25px;
+    font-family: sans-serif;
+ font-weight: bold;
+ padding: 30px;   
+}
+
+h1{
+    color: darkblue;
+    font-size: 100px;
+    font-family: cursive;
+    font-weight: bolder;
+    padding-top: 30px;
+}
+p, #print{
+    font-size: 20px;
+    color: darkorange;
+    font-family: fantasy;
+    font-weight: normal;
+}
+h4
+{
+    color: lightblue;
+    font-weight: bold;
+    font-family: cursive;
+    border: 5px;
+    box-sizing: 30px;
+    background: black;
+    padding: 2px;
+    border-radius: 25px;
+    border-left: 10%;
+    border-right: 10%;
+    font-size: 25px;
+    letter-spacing: 4px;
+}
+p2
+{
+    font-size: 90px;
+    color: red;
+}
+#Game
+{
+    background-color: lightgreen;
+    color: lightsalmon;
+    font-size: 75px;
+    border-radius: 50px;
+}
+#Game:hover
+{
+    background-color: lightskyblue;
+    color: lightslategray;
+}
+button
+{
+    font-size: 80px;
+    background-color: red;
+    color: white;
+    border-radius: 25px;
+}
+button:hover{
+	cursor:pointer;
+}
+p3
+{
+	color:black;
+	font-size: 75px;
+}
+input[type=text]
+{
+	font-size: 80px;
+    background-color: blue;
+    color: green;
+	width: 65%;
+}
+input[type=text]:hover{
+	cursor:not-allowed;
+}
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid white;
+  border-radius: 50%;
+  border-top: 16px solid green;
+  
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#welcome {
+  display: none;
+  text-align: center;
+}
+#Load{
+position: absolute;
+top:70%;
+left:35%;
+font-align:center;
+font-size:100px;
+}
+.search-box-wrapper {
+    display: inline-flex;
+    font-size: 20px;
+}
+
+.search-box-input {
+    font-size: inherit;
+    border: 0.2em solid #7e7;
+    border-radius: 0.5em 0 0 0.5em;
+    padding: 0.2em 0.5em;
+    outline: 0;
+}
+
+.search-box-input:hover,
+.search-box-input:focus {
+    border-color: #4d4;
+}
+
+.search-box-button {
+    font-size: inherit;
+    border: 0.2em solid #7e7;
+    border-radius: 0 0.5em 0.5em 0;
+    background-color: #7e7;
+    border-left: 0;
+    padding: 0 0.75em;
+    color: white;
+    font-weight: bold;
+    outline: 0;
+    cursor: pointer;
+}
+
+.search-box-button:hover,
+.search-box-button:focus {
+    border-color: #4d4;
+    background-color: #4d4;
+}
+
+.g-ytsubscribe{
+	float:right;
+}

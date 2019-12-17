@@ -1,0 +1,31 @@
+@media print{
+	body{
+		background: yellowgreen;
+		color: blue;
+	}
+	#submitDownload, #back{
+		display: none;
+	}
+	#link1, #link2, #link3{
+		text-decoration: none;
+		color: blue;
+	}
+	#settext{
+		display: block;
+		text-decoration-color: skyblue;
+		text-decoration: underline;
+	}
+	#show{
+		display:block;
+	}
+	#examples{
+		display:none;
+	}
+	p2{
+		display:none;
+	}
+	iframe{
+		display:none;
+	}
+}
+

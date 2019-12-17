@@ -1,0 +1,129 @@
+  body{
+           
+           background: #323232;   
+       }
+       .Sign-Up{
+         margin: auto;
+           background: #00adee;
+           margin-top: 50px;
+           padding: 5px;
+       }
+       form{
+           padding: 10px;
+           font-family: arial;
+           border: 1px dotted white;
+           
+       }
+       h1{
+           text-align: center;
+           background: orange;
+           color: white;
+           padding: 10px;
+           border-radius: 10px;
+            
+       }
+       input{
+           padding: 10px;
+           margin: 5px;
+           border-radius: 5px;
+           border: none;  
+       }
+       input[type=text], input[type=email],  input[type=number], input[type=password], input[type=url]{
+           width: 90%;
+           
+       }
+       input[type=submit], input[type=button]{
+           width: 95%;
+          background: orange;
+           cursor: pointer;
+           font-size: 18px;
+           font-weight: bold;
+           color: white;
+       }
+       input[type=submit]:hover{
+           background: yellow;
+       }
+	    input[type=button]:hover{
+			 background: yellow;
+			
+		}
+       select{
+           padding: 10px;
+           width: 32%;
+           border-radius: 5px;
+           
+       }
+       button.Btn
+       {
+          margin-bottom: 20px;
+           width: 220px;
+           height: 36px;
+           border: none;
+           border-radius: 2px;
+           color: #fff;
+           font-family: sans-serif;
+           font-weight: 500px;
+           transition: 0.2s ease;
+           cursor: pointer;
+        }
+       .Facebook
+       {
+        background: #32508e;
+     }
+       .Twitter
+       {
+           background: #55acee;
+       }
+       .Google
+       {
+           background: #dd4b39;
+       }
+      #SignedUp
+       {
+           color: greenyellow;
+           background: blue;
+           font-size: 25px;
+           border: none;
+           border-radius: 25px;
+           font-weight: bolder;
+       }
+       option
+       {
+           background-color: Green;
+           font-size: 27px;
+           color: blue;
+           font-weight: bold;
+       }
+       input[type="text"], input[type="email"], input[type=password], input[type=number], input[type=tel],input[type=url]
+       {
+           background-color: greenyellow;
+           color: lightblue;
+           font-size: 50px;
+           font-weight: bold;
+       }
+     p{
+	 color: green;
+	 font-size: 25px;
+	 font-weight:normal;
+	 }
+        li{
+	 color: green;
+	 font-size: 25px;
+	 font-weight:normal;
+	 }    
+       a {
+	   color:green;
+	   font-size:40px;
+	   }
+	   i
+	   {
+		   color:red;
+		   font-size:25px;
+	   }
+	   button{
+		   background:green;
+		   color:white;
+		   font-size:51px;
+		   border-radius:0px;
+	   }
+	   
